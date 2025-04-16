@@ -1,0 +1,25 @@
+{
+    "manifest_version": 1,
+    "name": "Firebase Studio Cleaner",
+    "version": "1.0",
+    "description": "Automatically removes the app bar from Firebase Studio or Project IDX workspace.",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://idx.google.com/*",
+        "https://studio.firebase.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://idx.google.com/*",
+                "https://studio.firebase.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
