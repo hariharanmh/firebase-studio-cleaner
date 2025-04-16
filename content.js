@@ -1,6 +1,6 @@
 /**
  * Firebase Studio Cleaner
- * This script hides distracting UI elements like the app bar in the Firebase Studio workspace.
+ * This script hides distracting UI elements like the <app-bar> tag in the Firebase Studio workspace.
  * Easily extendable to remove more elements.
  */
 
@@ -15,9 +15,9 @@ function hideElement(selector) {
     }
 }
 
-// List of selectors to hide
+// List of selectors to hide (use tag names directly)
 const elementsToHide = [
-    '.app-bar' // Add more selectors here as needed
+    'app-bar' // Custom HTML tag to hide
 ];
 
 // Execute hiding logic
