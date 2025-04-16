@@ -1,5 +1,5 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 3,
     "name": "Firebase Studio Cleaner",
     "version": "1.0",
     "description": "Automatically removes the app bar from Firebase Studio or Project IDX workspace.",
